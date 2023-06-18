@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GODMC</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    
+  </head>
+  <body>
+   <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap  flex-col md:flex-row p-5 items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      
+      <span class="ml-3 text-xl"><img src="logo.jpg" width="50px " height="auto"></span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900" href="https://discord.gg/NbxBaEYTty" target="blank">Discord server</a>
+      <a class="mr-5 hover:text-gray-900" href="card.html" target="blank">Buy Ranks</a>
+      <a class="mr-5 hover:text-gray-900" href="https://minecraftservers.org/vote/651417" target="blank">Vote server</a>
+    
+    </nav>
+    
+  </div>
+</header>
+    <!-- ======================================== 
+          Our  Cotnact Us Section   
+    ========================================  -->
+
+   <section class="section section-contact section--hidden">
+      <div class="container"><br><br>
+        <center><h1 style="font-size: 40px;">Contact Us</h1>
+      <hr style="height:20px; width: 100px; colour: black;"></center>
+      </div>
+
+      <div class="section-contact-main container">
+        <form action="https://formspree.io/f/xnqyegqw"
+  method="POST">
+          <div class="grid grid-two-col">
+            <center><input
+              type="text"
+              name="username"
+              id=""
+              required
+              placeholder="Name"
+            style="margin-top: 20px;"
+            /></center>
+           <center> <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+              autocomplete="false"
+            /></center>
+          </div>
+          <center><div>
+            <input type="text" name="subject" placeholder="Subject" />
+          </div></center>
+         <center> <div>
+            <textarea name="message" id="" placeholder="Message"></textarea>
+          </div></center>
+          <center><div>
+            <input type="submit" value="send message" class="btn" style="cursor: pointer; color: white; background: dodgerblue; border-radius: 100px; height: 60px; width: 200px; margin-bottom: 20px;" />
+          </div></center>
+        </form>
+      </div>
+    </section>
+
+       <footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="logo.jpg" style="width:50px; height:auto">
+      <span class="ml-3 text-xl">GODMC</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 ANJIYKSPERO —
+      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@! 𝐋𝐇 么 yatharth1002</a>
+    </p>
+    </div>
+</footer>
+         
+    <!-- ======================================== 
+          Our JavaScript Section   
+    ========================================  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+  <style>
+
+    @media (max-width:600px){
+ .section-contact-main {
+  max-width: 70rem !important;
+  box-shadow: none !important;
+}
+
+  .section-contact-main input,
+   textarea {
+  width: 100% !important;
+ 
+}
+}
+    
+.section-contact-main {
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.9);
+  border-radius: 60px;
+}
+
+.section-contact-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-contact-main .grid {
+  gap: 2rem;
+}
+
+.section-contact-main input,
+textarea {
+
+/*  padding: 1.5rem 2rem;*/
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 1.6rem;
+  font-family: "work sans";
+}
+
+.section-contact-main textarea {
+  height: 10rem;
+}
+
+/* ::placeholder {
+  font-size: 1.6rem;
+  font-family: "work sans";
+} */
+
+.section-contact-main input[type="submit"] {
+  max-width: 30%;
+  border: none;
+  transition: 0.5s;
+}
+
+.section-contact-main input[type="submit"]:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.9);;
+}
+
+
+
+  a{
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  a:hover{
+    transform: translateY(-10px);
+    text-shadow: 0px 50px 30px rgba(0, 0, 0, 0.9);
+  }
+}
+  </style>
+</html>
